@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Deep Graph Contrastive Representation Learning",
+        "authors": ["Yanqiao Zhu", "Yichen Xu", "Feng Yu", "Qiang Liu", "Shu Wu", "Liang Wang"],
+        "venue": "GRL+ @ ICML Workshop",
+        "year": "2020"
+    },
+    {
+        "id": 2,
+        "title": "Graph Contrastive Learning with Adaptive Augmentation",
+        "authors": ["Yanqiao Zhu", "Yichen Xu", "Feng Yu", "Qiang Liu", "Shu Wu", "Liang Wang"],
+        "venue": "TheWebConf",
+        "year": "2021"
+    },
+    {
+        "id": 3,
+        "title": "An Empirical Analysis of Deep Graph Contrastive Learning",
+        "authors": ["Yanqiao Zhu", "Yichen Xu", "Qiang Liu", "Shu Wu"],
+        "venue": "OpenReview",
+        "year": "2021"
+    }
+]

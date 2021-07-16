@@ -11,6 +11,12 @@
 		EF43E99026A1CB900099784A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E98F26A1CB900099784A /* ContentView.swift */; };
 		EF43E99226A1CB910099784A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF43E99126A1CB910099784A /* Assets.xcassets */; };
 		EF43E99526A1CB910099784A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF43E99426A1CB910099784A /* Preview Assets.xcassets */; };
+		EF43E9A026A1CBCA0099784A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E99F26A1CBCA0099784A /* Home.swift */; };
+		EF43E9A226A1CBEF0099784A /* PaperItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E9A126A1CBEF0099784A /* PaperItem.swift */; };
+		EF43E9A526A1CEA50099784A /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E9A426A1CEA50099784A /* Paper.swift */; };
+		EF43E9A726A1D1A10099784A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E9A626A1D1A10099784A /* ModelData.swift */; };
+		EF43E9AB26A1D4600099784A /* mockPapers.json in Resources */ = {isa = PBXBuildFile; fileRef = EF43E9AA26A1D4600099784A /* mockPapers.json */; };
+		EF43E9AD26A1D4FA0099784A /* PaperList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43E9AC26A1D4FA0099784A /* PaperList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		EF43E99426A1CB910099784A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF43E99626A1CB910099784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF43E99726A1CB910099784A /* Papiers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Papiers.entitlements; sourceTree = "<group>"; };
+		EF43E99F26A1CBCA0099784A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EF43E9A126A1CBEF0099784A /* PaperItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperItem.swift; sourceTree = "<group>"; };
+		EF43E9A426A1CEA50099784A /* Paper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
+		EF43E9A626A1D1A10099784A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		EF43E9AA26A1D4600099784A /* mockPapers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockPapers.json; sourceTree = "<group>"; };
+		EF43E9AC26A1D4FA0099784A /* PaperList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +65,10 @@
 		EF43E98C26A1CB900099784A /* Papiers */ = {
 			isa = PBXGroup;
 			children = (
+				EF43E9A926A1D2F90099784A /* Resources */,
+				EF43E99E26A1CBB70099784A /* Model */,
+				EF43E99D26A1CBB00099784A /* Views */,
 				EF43E98D26A1CB900099784A /* PapiersApp.swift */,
-				EF43E98F26A1CB900099784A /* ContentView.swift */,
 				EF43E99126A1CB910099784A /* Assets.xcassets */,
 				EF43E99626A1CB910099784A /* Info.plist */,
 				EF43E99726A1CB910099784A /* Papiers.entitlements */,
@@ -69,6 +83,34 @@
 				EF43E99426A1CB910099784A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF43E99D26A1CBB00099784A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF43E98F26A1CB900099784A /* ContentView.swift */,
+				EF43E99F26A1CBCA0099784A /* Home.swift */,
+				EF43E9A126A1CBEF0099784A /* PaperItem.swift */,
+				EF43E9AC26A1D4FA0099784A /* PaperList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF43E99E26A1CBB70099784A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF43E9A426A1CEA50099784A /* Paper.swift */,
+				EF43E9A626A1D1A10099784A /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF43E9A926A1D2F90099784A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF43E9AA26A1D4600099784A /* mockPapers.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF43E99526A1CB910099784A /* Preview Assets.xcassets in Resources */,
+				EF43E9AB26A1D4600099784A /* mockPapers.json in Resources */,
 				EF43E99226A1CB910099784A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF43E99026A1CB900099784A /* ContentView.swift in Sources */,
+				EF43E9A526A1CEA50099784A /* Paper.swift in Sources */,
+				EF43E9A226A1CBEF0099784A /* PaperItem.swift in Sources */,
+				EF43E9A026A1CBCA0099784A /* Home.swift in Sources */,
 				EF43E98E26A1CB900099784A /* PapiersApp.swift in Sources */,
+				EF43E9AD26A1D4FA0099784A /* PaperList.swift in Sources */,
+				EF43E9A726A1D1A10099784A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
