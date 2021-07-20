@@ -16,6 +16,7 @@ extension NSTextField { // << workaround !!!
 
 struct PaperList: View {
     @State private var selected: Int? = nil
+    @State private var testSelected: String? = nil
     
     var body: some View {
         List {
@@ -26,6 +27,53 @@ struct PaperList: View {
             .listRowInsets(EdgeInsets())
         }
         .listStyle(PlainListStyle())
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Menu {
+                    Button(action: {}) {
+                        Label("File", systemImage: "doc.badge.plus")
+                    }
+
+                    Button(action: {}) {
+                        Label("Folder", systemImage: "folder.badge.plus")
+                    }
+                }
+                label: {
+                    Label("Import", systemImage: "plus")
+                }
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Menu {
+                    Button(action: {}) {
+                        Label("Bibtex Entry", systemImage: "pencil")
+                    }
+
+                    Button(action: {}) {
+                        Label("Citation Text", systemImage: "note.text")
+                    }
+                    
+                    Button(action: {}) {
+                        Label("File Path", systemImage: "paperclip")
+                    }
+                }
+                label: {
+                    Label("Export", systemImage: "square.and.arrow.up")
+                }
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: {}) {
+                    Label("Read", systemImage: "book")
+                }
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: {}) {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            }
+        }
     }
 }
 

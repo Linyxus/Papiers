@@ -16,11 +16,16 @@ struct Home: View {
                     .frame(maxWidth: .infinity, alignment: .center)
 
                 NavigationLink(destination: PaperList()) {
-                    Text("All Papers")
-                        .font(.subheadline)
-                        .foregroundColor(.primary)
-                        .cornerRadius(5.0)
-                        .padding(5)
+                    HStack {
+                        Image(systemName: "tray.2")
+                        
+                        Text("All Papers")
+                            .font(.headline)
+                            .fontWeight(.regular)
+                            .foregroundColor(.primary)
+                            .cornerRadius(5.0)
+                    }
+                    .padding(8)
                 }
                 
                 Text("Collections")
@@ -29,13 +34,17 @@ struct Home: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                 
                 ForEach(collections, id: \.self) { collection in
-                    
                     NavigationLink(destination: PaperList()) {
-                        Text(collection)
-                            .font(.subheadline)
-                            .foregroundColor(.primary)
-                            .cornerRadius(5.0)
-                            .padding(5)
+                        HStack {
+                            Image(systemName: "tray.full")
+                            
+                            Text(collection)
+                                .font(.headline)
+                                .fontWeight(.regular)
+                                .foregroundColor(.primary)
+                                .cornerRadius(5.0)
+                        }
+                        .padding(8)
                     }
                 }
                 
@@ -49,11 +58,12 @@ struct Home: View {
                         Image(systemName: "magnifyingglass")
                         
                         Text("Search")
-                            .font(.subheadline)
+                            .font(.headline)
+                            .fontWeight(.regular)
                             .foregroundColor(.primary)
                             .cornerRadius(5.0)
-                            .padding(5)
                     }
+                    .padding(8)
                 }
 
                 NavigationLink(destination: PaperList()) {
@@ -61,11 +71,12 @@ struct Home: View {
                         Image(systemName: "square.and.arrow.down")
                         
                         Text("Import")
-                            .font(.subheadline)
+                            .font(.headline)
+                            .fontWeight(.regular)
                             .foregroundColor(.primary)
                             .cornerRadius(5.0)
-                            .padding(5)
                     }
+                    .padding(8)
                 }
             }
             .frame(minWidth: 250)
